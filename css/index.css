@@ -1,0 +1,59 @@
+body {
+    background: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero-section h1 {
+    font-weight: bold;
+    color: #343a40;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.btn-custom {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn-custom:hover {
+    background: #0056b3;
+}
+/* Slideshow & Message Section */
+.carousel-container {
+    max-width: 800px;
+    margin: auto;
+}
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+}
+.content-text {
+    max-width: 400px;
+    text-align: left;
+}
+.content-text h2 {
+    font-weight: bold;
+    color: #343a40;
+}
+.content-text p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}

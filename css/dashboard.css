@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c3e50;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background: #34495e;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background: #3498db;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.customer-table {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.customer-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.customer-table th, .customer-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.customer-table th {
+    background: #2980b9;
+    color: white;
+}
+
+.customer-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.btn-edit {
+    background: #27ae60;
+}
+
+.btn-delete {
+    background: #c0392b;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* File View & Download */
+a[target="_blank"] {
+    color: #3498db;
+    font-weight: bold;
+}
+
+a[target="_blank"]:hover {
+    text-decoration: underline;
+}
