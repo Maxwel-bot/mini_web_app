@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 session_start();
 
-require_once "database.php"; // Ensure database connection
+require_once "database.php";
 
 // Get input values and trim whitespace
 $firstName = trim($_POST['first_name']);
@@ -13,11 +13,11 @@ $email = trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL));
 $password = $_POST['password'];
 $hashed_password = password_hash($password, PASSWORD_BCRYPT); // Secure password hashing
 
-// Default values
+
 $file_name = null;
 $file_path = null;
 
-// ✅ Check if the email already exists
+// Check if the email already exists
 $emailCheckStmt = $connection->prepare("SELECT email FROM userdata WHERE email = ?");
 $emailCheckStmt->bind_param("s", $email);
 $emailCheckStmt->execute();
@@ -29,7 +29,7 @@ if ($emailCheckStmt->num_rows > 0) {
 }
 $emailCheckStmt->close();
 
-// ✅ Handle File Upload
+
 if (isset($_FILES["cv"]) && $_FILES["cv"]["error"] == 0) {
     $target_dir = $_SERVER['DOCUMENT_ROOT'] . "/uploads/"; // Ensure correct path
 
@@ -48,7 +48,7 @@ if (isset($_FILES["cv"]) && $_FILES["cv"]["error"] == 0) {
     if (in_array($file_type, $allowed_types)) {
         $file_path = $target_dir . $file_name; // Full file path
 
-        // Prevent file overwrite by appending a timestamp if file exists
+        
         if (file_exists($file_path)) {
             $file_name = pathinfo($file_name, PATHINFO_FILENAME) . "_" . time() . "." . $file_type;
             $file_path = $target_dir . $file_name;
