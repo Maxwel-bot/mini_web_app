@@ -55,54 +55,8 @@ $stmt->close();
     <!-- FontAwesome for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Arial', sans-serif;
-        }
-        .container {
-            margin-top: 50px;
-        }
-        .table-container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .table {
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        th {
-            background-color: #343a40 !important;
-            color: white !important;
-        }
-        .table-hover tbody tr:hover {
-            background-color: #f1f1f1;
-        }
-        .btn {
-            padding: 6px 12px;
-            font-size: 14px;
-            border-radius: 5px;
-        }
-        .btn-view {
-            background-color: #28a745;
-            color: white;
-        }
-        .btn-edit {
-            background-color: #007bff;
-            color: white;
-        }
-        .btn-delete {
-            background-color: #dc3545;
-            color: white;
-        }
-        .btn-logout {
-            background-color: #ff9800;
-            color: white;
-        }
-    </style>
 </head>
+    <link rel ="stylesheet" href="css/dashboard.css">
 <body>
 
     <div class="container">
